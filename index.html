@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Dhanush Bolisetty · Senior AI/ML Engineer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&display=swap">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#f6f7fb;--sf:#fff;--tx:#12141c;--mu:#5b6075;--ac:#4f46e5;--ac2:#0891b2;--bd:#e2e5ef;--ok:#16a34a;--bad:#dc2626}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#0b0d14;--sf:#141826;--tx:#eef0f8;--mu:#9aa1ba;--ac:#818cf8;--ac2:#22d3ee;--bd:#252b40}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#0b0d14;--sf:#141826;--tx:#eef0f8;--mu:#9aa1ba;--ac:#818cf8;--ac2:#22d3ee;--bd:#252b40}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.65 Inter,system-ui,sans-serif}
+h1,h2,h3{font-family:'Space Grotesk',Inter,sans-serif;line-height:1.15;margin:0}
+a{color:var(--ac);text-decoration:none}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;display:flex;gap:18px;align-items:center;padding:12px 5vw;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--bd);overflow-x:auto;white-space:nowrap}
+nav b{font-family:'Space Grotesk',sans-serif;margin-right:auto}
+nav a{color:var(--mu);font-size:14px}nav a:hover{color:var(--ac)}
+nav button{background:none;border:1px solid var(--bd);color:var(--tx);border-radius:8px;padding:4px 10px;cursor:pointer}
+section{max-width:1080px;margin:0 auto;padding:80px 5vw 20px}
+h2{font-size:clamp(26px,4vw,36px);margin-bottom:8px}
+h2::after{content:"";display:block;width:48px;height:4px;border-radius:4px;background:linear-gradient(90deg,var(--ac),var(--ac2));margin-top:10px}
+.sub{color:var(--mu);margin:14px 0 28px;max-width:680px}
+#hero{position:relative;min-height:88vh;display:flex;align-items:center;max-width:none;overflow:hidden;padding:60px 5vw}
+#net{position:absolute;inset:0;width:100%;height:100%}
+.hin{position:relative;max-width:1080px;margin:0 auto;width:100%}
+.tag{display:inline-block;font-size:13px;color:var(--ac);border:1px solid var(--bd);background:var(--sf);padding:4px 12px;border-radius:99px}
+#hero h1{font-size:clamp(40px,8vw,84px);margin:18px 0 10px;letter-spacing:-1.5px}
+.g{background:linear-gradient(90deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.type{font:500 clamp(18px,3vw,26px) 'Space Grotesk',sans-serif;min-height:1.4em}
+.type::after{content:"|";animation:bl 1s steps(1) infinite;color:var(--ac)}
+@keyframes bl{50%{opacity:0}}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{padding:11px 22px;border-radius:10px;font-weight:500;border:1px solid var(--bd);background:var(--sf);color:var(--tx);transition:.2s}
+.btn.p{background:linear-gradient(90deg,var(--ac),var(--ac2));color:#fff;border:0}
+.btn:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(79,70,229,.25)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:44px}
+.stat{background:var(--sf);border:1px solid var(--bd);border-radius:14px;padding:16px}
+.stat b{font:700 30px 'Space Grotesk',sans-serif;color:var(--ac)}.stat span{display:block;color:var(--mu);font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.card{background:var(--sf);border:1px solid var(--bd);border-radius:16px;padding:22px;transition:.25s}
+.card:hover{transform:translateY(-5px);border-color:var(--ac);box-shadow:0 12px 30px rgba(79,70,229,.15)}
+.card h3{font-size:19px;margin-bottom:6px}.card p{color:var(--mu);margin:6px 0 12px;font-size:15px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips i{font-style:normal;font-size:12px;padding:3px 10px;border-radius:99px;background:color-mix(in srgb,var(--ac) 12%,transparent);color:var(--ac)}
+.tl{border-left:2px solid var(--bd);margin-left:8px;padding-left:24px}
+.job{position:relative;margin-bottom:30px}
+.job::before{content:"";position:absolute;left:-33px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--ac);box-shadow:0 0 0 4px var(--bg)}
+.job h3{font-size:20px}.job small{color:var(--mu)}
+.job ul{margin:10px 0;padding-left:18px;color:var(--mu);font-size:15px}.job li{margin-bottom:4px}
+.sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.rv{opacity:0;transform:translateY(28px);transition:.7s}.rv.in{opacity:1;transform:none}
+.games{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px}
+.hud{display:flex;justify-content:space-between;color:var(--mu);font-size:14px;margin:6px 0 10px}
+#mem{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.tile{aspect-ratio:1;perspective:600px;cursor:pointer;border:0;background:none;padding:0}
+.tile div{position:relative;width:100%;height:100%;transition:transform .45s;transform-style:preserve-3d}
+.tile.f div{transform:rotateY(180deg)}
+.tile span{position:absolute;inset:0;display:grid;place-items:center;border-radius:12px;backface-visibility:hidden;font:700 13px 'Space Grotesk',sans-serif;text-align:center;border:1px solid var(--bd)}
+.tile .a{background:linear-gradient(135deg,var(--ac),var(--ac2));color:#fff;font-size:22px}
+.tile .b{background:var(--sf);transform:rotateY(180deg);color:var(--tx)}
+.tile.m .b{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 15%,var(--sf))}
+canvas#cc{width:100%;max-width:360px;display:block;margin:0 auto;border:1px solid var(--bd);border-radius:14px;background:var(--sf);touch-action:none}
+.bt{margin-top:12px;cursor:pointer;font:inherit}
+footer{text-align:center;color:var(--mu);padding:60px 5vw 40px;font-size:14px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style></head><body>
+<nav><b>DB<span class="g">.ai</span></b><a href="#about">About</a><a href="#exp">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#play">Play</a><a href="#contact">Contact</a><button id="th" aria-label="Toggle theme">◐</button></nav>
+
+<section id="hero"><canvas id="net"></canvas><div class="hin">
+<span class="tag">● Open to Senior AI / GenAI roles</span>
+<h1>Dhanush <span class="g">Bolisetty</span></h1>
+<div class="type" id="ty"></div>
+<p class="sub">I build production-grade LLM applications, multi-agent systems and RAG pipelines for regulated industries: finance, healthcare and telecom.</p>
+<div class="cta"><a class="btn p" href="#projects">View projects</a><a class="btn" href="https://github.com/Dhanush098343" target="_blank" rel="noopener">GitHub ↗</a><a class="btn" href="#play">Play a game 🎮</a></div>
+<div class="stats"><div class="stat"><b data-n="5" data-s="+">0</b><span>Years in AI/ML</span></div><div class="stat"><b data-n="50" data-s="%">0</b><span>Ops efficiency gain</span></div><div class="stat"><b data-n="35" data-s="%">0</b><span>RAG accuracy lift</span></div><div class="stat"><b data-n="25" data-s="%">0</b><span>Fewer hallucinations</span></div></div>
+</div></section>
+
+<section id="about" class="rv"><h2>About</h2>
+<p class="sub">Senior AI/ML Engineer focused on enterprise LLM applications, agentic workflows, Retrieval-Augmented Generation, evaluation frameworks and cloud-native AI on Azure OpenAI, AWS Bedrock and LangGraph. Strong in MLOps and LLMOps: deployment, monitoring, CI/CD and responsible AI for regulated environments. M.S. in Data Science, University at Albany, SUNY (2025).</p>
+<div class="grid"><div class="card"><h3>🤖 Agentic AI</h3><p>Multi-agent orchestration for planning, retrieval, reasoning and tool execution.</p></div><div class="card"><h3>🔎 RAG &amp; Evaluation</h3><p>Hybrid retrieval, semantic chunking, RAFT, guardrails and automated testing.</p></div><div class="card"><h3>🛡️ Reliable &amp; Governed</h3><p>Audit logging, explainability, human-in-the-loop validation and observability.</p></div></div></section>
+
+<section id="exp"><h2 class="rv">Experience</h2><div class="tl rv">
+<div class="job"><h3>Sr AI Engineer · Verizon</h3><small>July 2025 – Present</small><ul><li>Built LangGraph and OpenAI Agents SDK applications that improved operational efficiency by 50%.</li><li>Designed RAG pipelines on Azure AI Search, FAISS and Pinecone, lifting response accuracy by 35%.</li><li>Shipped evaluation and guardrail frameworks with prompt versioning, cutting hallucinations by 25%.</li><li>Deployed multi-agent workflows on Azure AI Foundry with Azure Functions, Service Bus and AKS; monitored with Prometheus and Grafana.</li></ul><div class="chips"><i>Azure AI Foundry</i><i>LangGraph</i><i>RAFT</i><i>FastAPI</i><i>AKS</i><i>MLflow</i></div></div>
+<div class="job"><h3>AI / ML Engineer · UnitedHealth Group</h3><small>May 2024 – June 2025</small><ul><li>Improved answer relevance by 30% with RAG across FAISS, Pinecone, Weaviate and OpenSearch.</li><li>Built GenAI apps on AWS Bedrock and GPT-4o for summarization, search and clinical decision support.</li><li>Increased pipeline throughput by 50% with PySpark, Databricks and XGBoost models.</li><li>Automated training, validation and deployment with Azure DevOps and MLflow.</li></ul><div class="chips"><i>AWS Bedrock</i><i>GPT-4o</i><i>PySpark</i><i>SageMaker</i><i>Kubernetes</i></div></div>
+<div class="job"><h3>AI Research Engineer · University at Albany, SUNY</h3><small>Sept 2023 – Feb 2024</small><ul><li>Prototyped NLP and language-model experiments in PyTorch and Hugging Face with faculty researchers.</li></ul></div>
+<div class="job"><h3>Data Scientist · Cognizant</h3><small>July 2021 – July 2023</small><ul><li>Built fraud, risk and forecasting models; cut experiment setup time by 50% with automated pipelines.</li><li>Added SHAP and LIME explainability for regulatory compliance; shipped FastAPI services on Azure ML.</li></ul></div>
+</div></section>
+
+<section id="projects"><h2 class="rv">Projects</h2><p class="sub rv">Selected work. More on <a href="https://github.com/Dhanush098343" target="_blank" rel="noopener">GitHub</a>.</p>
+<div class="grid rv">
+<div class="card"><h3>Medical RAG Chatbot</h3><p>End-to-end chatbot that ingests medical PDFs, chunks and embeds them, and answers from top-K retrieved context.</p><div class="chips"><i>Flask</i><i>LangChain</i><i>Pinecone</i><i>MiniLM</i><i>Groq LLaMA 3.1</i></div></div>
+<div class="card"><h3>WhatsApp AI Image Matching</h3><p>Business automation that matches customer images to a catalog and logs leads via Twilio, Google APIs and n8n.</p><div class="chips"><i>FastAPI</i><i>Twilio</i><i>n8n</i><i>OAuth 2.0</i><i>Google Drive/Sheets</i></div></div>
+<div class="card"><h3>Churn Prediction App</h3><p>ANN-based customer churn model deployed as an interactive Streamlit application.</p><div class="chips"><i>TensorFlow</i><i>scikit-learn</i><i>Streamlit</i></div></div>
+<div class="card"><h3>NYC Taxi Analytics</h3><p>Dashboards over 100M+ records and 2B+ trips tracking $21.61B in revenue, after cleaning outliers and duplicates.</p><div class="chips"><i>SQL</i><i>Pandas</i><i>Power BI</i><i>Tableau</i></div></div>
+<div class="card"><h3>Heart Disease Risk Model</h3><p>Random Forest and logistic regression on 10,000+ records reaching about 90% accuracy and 0.89 AUC.</p><div class="chips"><i>R</i><i>Random Forest</i><i>ggplot2</i></div></div>
+</div></section>
+
+<section id="skills"><h2 class="rv">Skills</h2><div class="sk rv" style="margin-top:24px">
+<div class="card"><h3>LLM &amp; Agents</h3><div class="chips"><i>GPT-4o</i><i>Claude</i><i>Gemini</i><i>LLaMA-2</i><i>Mistral</i><i>LangChain</i><i>LangGraph</i><i>LlamaIndex</i><i>CrewAI</i><i>AutoGen</i><i>Semantic Kernel</i></div></div>
+<div class="card"><h3>RAG &amp; Vector DBs</h3><div class="chips"><i>Pinecone</i><i>FAISS</i><i>Weaviate</i><i>Azure AI Search</i><i>OpenSearch</i><i>Hybrid retrieval</i></div></div>
+<div class="card"><h3>ML &amp; Data</h3><div class="chips"><i>PyTorch</i><i>TensorFlow</i><i>XGBoost</i><i>Hugging Face</i><i>PySpark</i><i>Databricks</i><i>SQL</i></div></div>
+<div class="card"><h3>Cloud &amp; LLMOps</h3><div class="chips"><i>Azure</i><i>AWS</i><i>GCP Vertex AI</i><i>Docker</i><i>Kubernetes</i><i>MLflow</i><i>GitHub Actions</i><i>Prometheus</i><i>Grafana</i></div></div>
+</div></section>
+
+<section id="play"><h2 class="rv">Play</h2><p class="sub rv">Two quick games themed on my daily work.</p>
+<div class="games rv">
+<div class="card"><h3>🧠 Stack Match</h3><div class="hud"><span>Moves: <b id="mv">0</b></span><span id="msg">Find all pairs</span></div><div id="mem"></div><button class="btn bt" id="mr">Shuffle</button></div>
+<div class="card"><h3>🎯 Chunk Catcher</h3><div class="hud"><span>Score: <b id="sc">0</b></span><span>Lives: <b id="lv">3</b> · Best: <b id="bs">0</b></span></div><canvas id="cc" width="320" height="400"></canvas><p style="font-size:13px;margin:8px 0 0;color:var(--mu)">Drag or use ← → to catch green relevant chunks. Dodge red hallucinations.</p><button class="btn bt" id="cr">Start / Restart</button></div>
+</div></section>
+
+<section id="contact" class="rv"><h2>Contact</h2><p class="sub">Let’s build something reliable.</p><div class="cta" style="margin-top:0"><a class="btn p" href="mailto:Bolisettydhanush0904@gmail.com">Email me</a><a class="btn" href="https://github.com/Dhanush098343" target="_blank" rel="noopener">GitHub ↗</a></div></section>
+<footer>© 2026 Dhanush Bolisetty · Albany, NY</footer>
+
+<script>
+const $=s=>document.querySelector(s),cv=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+$('#th').onclick=()=>{const r=document.documentElement,d=r.dataset.theme?r.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;r.dataset.theme=d?'light':'dark'};
+// typing
+const ph=['Senior AI / ML Engineer','Agentic AI & Multi-Agent Systems','RAG, Evaluation & Guardrails','LLMOps on Azure & AWS'];let pi=0,ci=0,del=0;
+(function t(){const w=ph[pi],e=$('#ty');e.textContent=w.slice(0,ci);if(!del&&ci++==w.length){del=1;return setTimeout(t,1400)}if(del&&--ci<0){del=0;ci=0;pi=(pi+1)%ph.length}setTimeout(t,del?30:70)})();
+// reveal + counters
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+document.querySelectorAll('[data-n]').forEach(e=>{const n=+e.dataset.n;let v=0;const i=setInterval(()=>{v+=Math.max(1,n/40);if(v>=n){v=n;clearInterval(i)}e.textContent=Math.round(v)+e.dataset.s},35)});
+// neural background
+const nc=$('#net'),nx=nc.getContext('2d');let P=[],mx=-999,my=-999;
+function rs(){nc.width=nc.offsetWidth;nc.height=nc.offsetHeight;P=Array.from({length:Math.min(70,nc.width/16|0)},()=>({x:Math.random()*nc.width,y:Math.random()*nc.height,vx:Math.random()-.5,vy:Math.random()-.5}))}
+rs();addEventListener('resize',rs);nc.parentElement.onmousemove=e=>{const r=nc.getBoundingClientRect();mx=e.clientX-r.left;my=e.clientY-r.top};
+(function d(){nx.clearRect(0,0,nc.width,nc.height);const a=cv('--ac');P.forEach((p,i)=>{p.x+=p.vx*.6;p.y+=p.vy*.6;if(p.x<0||p.x>nc.width)p.vx*=-1;if(p.y<0||p.y>nc.height)p.vy*=-1;nx.globalAlpha=.7;nx.fillStyle=a;nx.beginPath();nx.arc(p.x,p.y,2,0,7);nx.fill();for(let j=i+1;j<P.length;j++){const q=P[j],D=Math.hypot(p.x-q.x,p.y-q.y);if(D<120){nx.globalAlpha=(1-D/120)*.35;nx.strokeStyle=a;nx.beginPath();nx.moveTo(p.x,p.y);nx.lineTo(q.x,q.y);nx.stroke()}}const m=Math.hypot(p.x-mx,p.y-my);if(m<150){nx.globalAlpha=.6;nx.strokeStyle=cv('--ac2');nx.beginPath();nx.moveTo(p.x,p.y);nx.lineTo(mx,my);nx.stroke()}});requestAnimationFrame(d)})();
+// memory game
+const W=['RAG','LLM','Agent','FAISS','LangGraph','MLOps','Azure','Bedrock'];let fl=[],mt=0,mvs=0,lock=0;
+function mk(){const g=$('#mem');g.innerHTML='';fl=[];mt=0;mvs=0;$('#mv').textContent=0;$('#msg').textContent='Find all pairs';
+[...W,...W].sort(()=>Math.random()-.5).forEach(w=>{const b=document.createElement('button');b.className='tile';b.dataset.w=w;b.innerHTML='<div><span class="a">?</span><span class="b">'+w+'</span></div>';b.onclick=()=>{if(lock||b.classList.contains('f'))return;b.classList.add('f');fl.push(b);if(fl.length==2){$('#mv').textContent=++mvs;const[x,y]=fl;if(x.dataset.w==y.dataset.w){x.classList.add('m');y.classList.add('m');fl=[];if(++mt==W.length)$('#msg').textContent='🎉 Solved in '+mvs+' moves!'}else{lock=1;setTimeout(()=>{x.classList.remove('f');y.classList.remove('f');fl=[];lock=0},800)}}};g.appendChild(b)})}
+$('#mr').onclick=mk;mk();
+// catcher
+const c=$('#cc'),x=c.getContext('2d');let it=[],pad=130,sc=0,lv=3,run=0,best=0,tk=0,keys={};
+function rst(){it=[];sc=0;lv=3;run=1;tk=0;pad=130;ui();loop()}
+function ui(){$('#sc').textContent=sc;$('#lv').textContent=lv;$('#bs').textContent=best}
+const mv=px=>{const r=c.getBoundingClientRect();pad=Math.max(0,Math.min(c.width-60,(px-r.left)*c.width/r.width-30))};
+c.onmousemove=e=>mv(e.clientX);c.ontouchmove=e=>{mv(e.touches[0].clientX)};
+addEventListener('keydown',e=>{keys[e.key]=1;if(run&&e.key.startsWith('Arrow'))e.preventDefault()});addEventListener('keyup',e=>keys[e.key]=0);
+function loop(){if(!run)return;tk++;if(keys.ArrowLeft)pad=Math.max(0,pad-6);if(keys.ArrowRight)pad=Math.min(c.width-60,pad+6);
+if(tk%Math.max(18,50-sc)==0)it.push({x:Math.random()*290+10,y:-10,g:Math.random()>.32,v:1.6+sc*.05});
+x.clearRect(0,0,c.width,c.height);x.fillStyle=cv('--ac');x.fillRect(pad,c.height-18,60,10);
+it=it.filter(o=>{o.y+=o.v;x.fillStyle=o.g?cv('--ok'):cv('--bad');x.fillRect(o.x,o.y,20,14);x.fillStyle='#fff';x.font='9px sans-serif';x.fillText(o.g?'doc':'hal',o.x+2,o.y+11);
+if(o.y>c.height-28&&o.y<c.height-8&&o.x+20>pad&&o.x<pad+60){if(o.g)sc++;else lv--;ui();return 0}
+if(o.y>c.height){if(o.g)lv--;ui();return 0}return 1});
+if(lv<=0){run=0;best=Math.max(best,sc);ui();x.fillStyle='rgba(0,0,0,.6)';x.fillRect(0,0,c.width,c.height);x.fillStyle='#fff';x.font='700 22px sans-serif';x.textAlign='center';x.fillText('Game over · '+sc,c.width/2,c.height/2);x.textAlign='left';return}
+requestAnimationFrame(loop)}
+$('#cr').onclick=rst;
+</script></body></html>
